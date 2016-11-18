@@ -1,1 +1,13 @@
+//=============================================================================
+/* Subject: CMPUT391
+ * Assignment: Assignment 3
+ * Authors: Michael Morris, William Kwan
+ * 
+ * Q8 (15 marks)
+ * Write a program, in a file called q8.XYZ, where XYZ is the appropriate extension of your chosen programming language, that:
+ * reads in two parameters from the command line: (1) the name of a SQLite database to store the RDF graph and (2) a path to a 
+ * file RDF triples in Turtle format that loads the RDF triples into the database.
+ */
+//=============================================================================
+
 
