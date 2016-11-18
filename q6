@@ -22,6 +22,7 @@
 
 START TRANSACTION
 
+try {
 READ NEXT TRIPLE GROUP
 
 // Discard
@@ -40,11 +41,13 @@ EACH VALUE OF RDF Subject PROPERTIES AS CELL (ROW BASED)
 sqliteType = getType(value);
 ...
 
-IF ERROR {
+COMMIT TRANSACTION
+
+} catch( INPUTEXCEPTION ) {
+  DISPLAY ERROR
   ROLLBACK TRANSACTION
 }
 
-COMMIT TRANSACTION
 
 ...
 
@@ -63,4 +66,20 @@ sqliteType getType(String value) {
     ITS A STRING
   }
 
+}
+
+void createTable(...) {
+  BUILD STRING
+  
+  EACH RDF Subject AS TABLE
+  EACH PROPERTY OF RDF Subject AS COLUMN
+  sqliteType = getType(0, COLUMN);
+  
+  
+ 
+  
+  IF INPUT IS BAD {
+    THROW INPUT EXCEPTION
+  }
+  
 }
