@@ -1,1 +1,12 @@
+//=============================================================================
+/* Subject: CMPUT391
+ * Assignment: Assignment 3
+ * Authors: Michael Morris, William Kwan
+ * 
+ * Q4 (5 marks)
+ * In a plain text ASCII file called q4.txt write a query to find the number of World Cup Final
+ * matches played by every national soccer team who has played in more than 3 finals.
+ */
+//=============================================================================
+
 
