@@ -1,1 +1,14 @@
+//=============================================================================
+/* Subject: CMPUT391
+ * Assignment: Assignment 3
+ * Authors: Michael Morris, William Kwan
+ * 
+ * Q5 (5 marks)
+ * In a plain text ASCII file called q5.txt write a query to find, for every city in Alberta that has a hospital, the name of the city, 
+ * and the ratio of population over the number of hospitals, sorted in decreasing order of this ratio.
+ */
+//=============================================================================
+
+
+
 
