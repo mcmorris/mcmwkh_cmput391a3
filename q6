@@ -20,3 +20,47 @@
  */
 //=============================================================================
 
+START TRANSACTION
+
+READ NEXT TRIPLE GROUP
+
+// Discard
+IF DOES NOT HAVE @en TAG, SKIP
+
+
+EACH RDF Subject AS TABLE
+EACH PROPERTY OF RDF Subject AS COLUMN
+sqliteType = getType(0, COLUMN);
+USE TO CREATE SQLITE TABLE CREATE QUERY
+
+
+EACH RDF Subject AS TABLE
+EACH PROPERTY OF RDF Subject AS COLUMN
+EACH VALUE OF RDF Subject PROPERTIES AS CELL (ROW BASED)
+sqliteType = getType(value);
+...
+
+IF ERROR {
+  ROLLBACK TRANSACTION
+}
+
+COMMIT TRANSACTION
+
+...
+
+
+sqliteType getType(String value) {
+  USE REGEX TO MAKE CHECKS FASTER?
+  IF CONTAINS NO LETTERS, ONLY ACCEPTABLE SYMBOLS ARE ".", "-" {
+    IF DOES NOT CONTAIN "." {
+      ITS AN INTEGER
+    } ELSE {
+      ITS A DECIMAL.  BECAUSE SCREW FLOATS.
+    }
+    
+  }
+  ELSE {
+    ITS A STRING
+  }
+
+}
