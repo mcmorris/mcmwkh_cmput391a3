@@ -1,1 +1,11 @@
+//=============================================================================
+/* Subject: CMPUT391
+ * Assignment: Assignment 3
+ * Authors: Michael Morris, William Kwan
+ * 
+ * Q7 (5 marks)
+ * Provide in a plain text ASCII file called q7.txt the SQL commands to create any indexes you find appropriate for your RDF store. 
+ * Justify your choices. If you don't think indexes are necessary, explain why.
+ */
+//=============================================================================
 
