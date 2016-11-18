@@ -1,1 +1,12 @@
+//=============================================================================
+/* Subject: CMPUT391
+ * Assignment: Assignment 3
+ * Authors: Michael Morris, William Kwan
+ * 
+ * Q1 (5 marks)
+ * In a plain text ASCII file called q1.txt write a query to find which are the stadiums
+ * used by Italian soccer teams. Have the team and the stadium in the output. 
+ * If available, output the capacity of the stadium as well.
+ */
+//=============================================================================
 
