@@ -1,1 +1,22 @@
+//=============================================================================
+/* Subject: CMPUT391
+ * Assignment: Assignment 3
+ * Authors: Michael Morris, William Kwan
+ * 
+ * Q6 (10 marks)
+ * This part of the assignment is concerned with the mapping between the graph data model of RDF into the relational model.
+ * Your program must check for errors in the input RDF data. If an error is found, the program must print a message and stop.
+ * None of the triples inserted prior to the error being detected should persist in the database.
+ * Your program must be able to properly load a valid RDF graph in the Turtle format, such as this sample: Edmonton.txt, without any errors.
+ * Simplifying assumptions: for the sake of this assignment, you are only required to handle text in English (identified by the @en tag), and
+ * literals of type string, integer, float and decimal. You may, without any penalties, discard all triples with a language tag that is
+ * not @en and store literals of other types as plain strings. You do not need to store the language tag either.
+ * 
+ * Design a relational schema to represent an RDF data graph. Write in a plain text ASCII file called q6.txt a short report with:
+ * Your relational schema and the SQLite statements to create an empty database with that schema
+ * A short (max 2 paragraphs) explanation of your strategy to convert the RDF data into a database according to that schema
+ * An example of a short (say 10-20 triples) input RDF graph and the corresponding relational database; your example should 
+ * include prefix declarations.
+ */
+//=============================================================================
 
